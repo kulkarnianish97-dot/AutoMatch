@@ -1,4 +1,4 @@
-# 🚗 AutoMatch — Car Buying Advisor
+#  AutoMatch — Car Buying Advisor
 
 A warm, comforting website that helps people find their perfect car through an AI-powered advisor. No dealership pressure, no confusing filters — just honest, personalized guidance.
 
