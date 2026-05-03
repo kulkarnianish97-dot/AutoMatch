@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMatch — Find Your Perfect Car</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">🚗 AutoMatch</div>
+    <ul class="nav__links">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#advisor">Car Advisor</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact" class="nav__cta">Talk to Us</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__bg-texture"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Your trusted car companion</p>
+      <h1 class="hero__headline">Find the car that<br /><em>actually fits your life.</em></h1>
+      <p class="hero__sub">Tell us about yourself — your budget, lifestyle, and priorities — and we'll guide you to the right car with no pressure, no dealership games.</p>
+      <a href="#advisor" class="btn btn--primary">Start Finding Your Car</a>
+      <a href="#how" class="btn btn--ghost">See How It Works</a>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__card hero__card--1">
+        <span class="card-icon">💰</span>
+        <span>Budget-aware picks</span>
+      </div>
+      <div class="hero__card hero__card--2">
+        <span class="card-icon">🛡️</span>
+        <span>Reliability vetted</span>
+      </div>
+      <div class="hero__card hero__card--3">
+        <span class="card-icon">🧭</span>
+        <span>Unbiased guidance</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Three simple steps to your perfect match</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">01</div>
+          <h3>Tell us your story</h3>
+          <p>Describe your lifestyle, needs, and budget in plain English. No forms, no checkboxes — just a conversation.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <h3>We analyze & match</h3>
+          <p>Our car advisor cross-references hundreds of vehicles across reliability, cost-of-ownership, and fit for your situation.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <h3>Drive with confidence</h3>
+          <p>Get your personalized shortlist with honest pros, cons, and what to watch out for before you buy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVISOR -->
+  <section class="advisor" id="advisor">
+    <div class="container">
+      <h2 class="section-title">Car Advisor</h2>
+      <p class="section-sub">Describe what you're looking for — be as specific or general as you'd like</p>
+      <div class="advisor__box">
+        <div class="advisor__examples">
+          <span class="example-tag" data-text="I need a reliable used SUV under $25k with good cargo space for road trips">🛻 Used SUV, road trips</span>
+          <span class="example-tag" data-text="Looking for a sporty sedan under $35k, prefer German brands, daily commuter">🏎️ Sporty daily driver</span>
+          <span class="example-tag" data-text="First car for a teenager, safe, under $15k, low maintenance costs">🎓 First-time buyer</span>
+          <span class="example-tag" data-text="Family of 5, need third-row seating, hybrid preferred, budget $45k">👨‍👩‍👧 Family hauler</span>
+        </div>
+        <div class="advisor__input-wrap">
+          <textarea class="advisor__textarea" id="userInput" placeholder="e.g. I need a comfortable luxury sedan with great rear legroom, under $40k used, prefer something with a smooth ride and low running costs..."></textarea>
+          <button class="btn btn--primary advisor__submit" id="submitBtn">Get My Recommendations →</button>
+        </div>
+        <div class="advisor__response" id="response" style="display:none;">
+          <div class="response__header">
+            <span class="response__icon">🔍</span>
+            <span>Your Personalized Recommendations</span>
+          </div>
+          <div class="response__body" id="responseBody"></div>
+        </div>
+        <div class="advisor__loading" id="loading" style="display:none;">
+          <div class="loading__dots"><span></span><span></span><span></span></div>
+          <p>Analyzing your needs...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What People Are Saying</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"I was completely overwhelmed by the used car market. AutoMatch gave me three specific options I never would've found on my own — ended up with a Lexus ES that I love."</p>
+          <cite>— Marcus T., Chicago</cite>
+        </div>
+        <div class="testimonial">
+          <p>"Finally an honest resource that doesn't try to upsell me. It told me the car I wanted had high maintenance costs and suggested a better alternative. Saved me thousands."</p>
+          <cite>— Priya S., Austin</cite>
+        </div>
+        <div class="testimonial">
+          <p>"Bought my first car ever with zero stress. The recommendations were spot on for my budget and the explanations were clear and trustworthy."</p>
+          <cite>— Jordan M., Denver</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Simple Pricing</h2>
+      <p class="section-sub">No subscriptions. Pay only when you find value.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Quick Match</h3>
+          <div class="price">Free</div>
+          <p>One AI-powered recommendation session. Great for early-stage browsing.</p>
+          <ul>
+            <li>✓ Describe your needs</li>
+            <li>✓ Get 3 vehicle suggestions</li>
+            <li>✓ Basic pros & cons</li>
+          </ul>
+          <a href="#advisor" class="btn btn--ghost">Try It Free</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <h3>Deep Dive</h3>
+          <div class="price">$29</div>
+          <p>Full analysis with ownership costs, reliability data, and listing review.</p>
+          <ul>
+            <li>✓ Everything in Quick Match</li>
+            <li>✓ Specific listing review</li>
+            <li>✓ Carfax red flag check</li>
+            <li>✓ Negotiation tips</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>1-on-1 Call</h3>
+          <div class="price">$59</div>
+          <p>Live 30-min consultation with a real car enthusiast. Best for complex situations.</p>
+          <ul>
+            <li>✓ Everything in Deep Dive</li>
+            <li>✓ 30-minute live call</li>
+            <li>✓ Follow-up summary</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book a Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text">
+        <h2>Still have questions?</h2>
+        <p>Reach out and a real person will get back to you — usually within a few hours.</p>
+        <div class="contact__info">
+          <div>📧 hello@automatch.io</div>
+          <div>📞 (224) 555-0192</div>
+        </div>
+      </div>
+      <div class="contact__form">
+        <input type="text" placeholder="Your name" class="form-input" />
+        <input type="email" placeholder="Your email" class="form-input" />
+        <textarea placeholder="What's on your mind?" class="form-input form-textarea"></textarea>
+        <button class="btn btn--primary" style="width:100%">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">🚗 AutoMatch</div>
+      <p>Helping drivers find their perfect car — one honest conversation at a time.</p>
+      <div class="footer__links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p class="footer__copy">© 2026 AutoMatch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
